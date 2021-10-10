@@ -11,5 +11,6 @@ namespace lojaTAV.Model
         public int idCliente { get; set; }
         public string endereco { get; set; }
         public int cep { get; set; }
+        public string pais { get; set; }
     }
 }

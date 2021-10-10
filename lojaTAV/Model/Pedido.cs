@@ -42,11 +42,31 @@ namespace lojaTAV.Model
             }
             return true;
         }
+        
+        double valorFrete;
         public double CalcularFrete()
         {
             int cep = Cliente.getCepById(idCliente);
-            double valorFrete = Frete.GetValorFrete(cep);
+            string pais = Cliente.getPaisById(idCliente);
+            
+
+            switch (pais)
+            {
+                case "Brasil":
+                    valorFrete = Frete.GetValorFreteBR(cep);
+                    break;
+
+                case "Estados Unidos":
+                    valorFrete = Frete.GetValorFreteInternacional(pais)*2;
+                    break;
+
+                case "Mexico":
+                    valorFrete = Frete.GetValorFreteInternacional(pais)*1.5;
+                    break;
+            }
+
             return valorFrete;
+
         }
     }
 }

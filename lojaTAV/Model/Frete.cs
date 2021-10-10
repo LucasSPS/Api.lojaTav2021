@@ -11,5 +11,6 @@ namespace lojaTAV.Model
         public int idFrete { get; set; }
         public double valorFrete { get; set; }
         public int cep { get; set; }
+        public string pais { get; set; }
     }
 }

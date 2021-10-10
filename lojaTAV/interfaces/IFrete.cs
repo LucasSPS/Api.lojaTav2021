@@ -8,6 +8,10 @@ namespace lojaTAV.interfaces
 {
     public interface IFrete
     {
-        public double GetValorFrete(int cep);
+        public double GetValorFreteBR(int cep);
+
+        public double GetValorFreteInternacional(string pais);
+
+
     }
 }

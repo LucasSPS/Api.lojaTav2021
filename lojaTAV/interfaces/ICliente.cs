@@ -9,5 +9,6 @@ namespace lojaTAV.interfaces
     public interface ICliente
     {
         public int getCepById(int idCliente);
+        public string getPaisById(int idCliente);
     }
 }

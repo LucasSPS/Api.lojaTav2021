@@ -11,6 +11,7 @@ namespace lojaTAV.Model
     {
         public int idEntrega { get; set; }
         public int idEndereco { get; set; }
+        //public int idPaisDestino { get; set; }
         public DateTime agendamento { get; set; }
         public bool ValidaEntrega(IEntrega entrega)
         {
