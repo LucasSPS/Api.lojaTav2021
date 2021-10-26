@@ -24,8 +24,8 @@ namespace lojaTav2021.testes
             Mock<IEntrega> mock = new Mock<IEntrega>();
             mock.Setup(m => m.ValidaEntrega(entrega)).Returns(true);
 
-            //ACT
-            var result = pedido.ValidaEntrega(entrega);
+         //ACT
+         var result = pedido.ValidaEntrega(entrega);
 
             // Assert
             Assert.Equal(result, esperado);
